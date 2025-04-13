@@ -6,12 +6,15 @@ authors = ["Frederick <you@example.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "3.10"
 Flask = "^2.3.2"
 pymorphy2 = "^0.9.1"
 setuptools = "^78.1.0"
 pymorphy2-dicts-ru = "^2.4.417127.4579844"
+pyinstaller = "^6.12.0"
+flask-babel = "^4.0.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
