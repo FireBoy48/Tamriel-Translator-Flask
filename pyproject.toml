@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dunmer-translator-flask"
+version = "1.0.0"
+description = "Flask-приложение для перевода на Данмерский язык (The Elder Scrolls)"
+authors = ["Frederick <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.3.2"
+pymorphy2 = "^0.9.1"
+setuptools = "^78.1.0"
+pymorphy2-dicts-ru = "^2.4.417127.4579844"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

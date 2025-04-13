@@ -1,0 +1,116 @@
+{
+  "source_language": "ru",
+  "target_language": "dunmeri",
+  "dictionary": {
+
+    "привет": "sera",
+    "здравствуйте": "sera",
+    "прощай": "velkommen",
+    "спасибо": "khanahn",
+    "пожалуйста": "sera",
+
+
+    "друг": "n'wah",
+    "враг": "dagoth",
+    "чужак": "n'wah",
+    "ребенок": "n'chow",
+    "король": "nerevar",
+    "королева": "alma azura",
+    "воин": "kummu",
+    "жрец": "alma",
+    "маг": "hethuan",
+    "даэдра": "daedra",
+    "бог": "daedra",
+    "богиня": "azura",
+    "дух": "ancestor",
+    "предок": "ancestor",
+    "зверь": "guar",
+    "монстр": "kagouti",
+
+
+    "дом": "velothi",
+    "пустыня": "ashlands",
+    "лес": "bosmora",
+    "гора": "red",
+    "вода": "nalu",
+    "огонь": "kagouti",
+    "земля": "barilzar",
+    "камень": "baril",
+    "ветер": "sul",
+    "небо": "sul",
+    "пыль": "ashen",
+    "пепел": "ash",
+    "пепельный": "ashlander",
+    "мир": "resdayn",
+    "пространство": "oblivion",
+
+
+    "день": "loh",
+    "ночь": "mos",
+    "время": "almsivi",
+    "вечность": "sithis",
+
+
+    "жизнь": "alma",
+    "смерть": "dakka",
+    "душа": "soul",
+    "тело": "kogo",
+    "боль": "malur",
+    "месть": "reth",
+    "страх": "molag",
+
+
+    "любовь": "velk",
+    "любимый": "velkhan",
+    "честь": "indoril",
+    "вера": "tribunal",
+    "правда": "veloth",
+    "ложь": "sotha",
+    "гнев": "mephala",
+    "тьма": "mor",
+    "свет": "auran",
+    "сила": "dunmeri",
+    "воля": "will",
+    "гневный": "mephalic",
+    "темный": "morag",
+    "святой": "alma",
+
+
+    "идти": "dunmeris",
+    "быть": "sind",
+    "умирать": "dakka",
+    "жить": "alma",
+    "поклоняться": "saryoni",
+    "говорить": "tongue",
+    "петь": "chant",
+    "спать": "lan",
+    "бороться": "chall",
+
+
+    "я": "nchow",
+    "ты": "nwah",
+    "он": "dunmer",
+    "она": "alma",
+    "мы": "kummu",
+    "вы": "sera",
+    "они": "dagoth",
+
+
+    "меч": "sword",
+    "щит": "ward",
+    "песнь": "chant",
+    "магия": "hethu",
+    "путь": "veloth",
+    "врата": "oblivion",
+    "портал": "gate",
+    "книга": "scroll",
+    "свиток": "scroll",
+
+
+    "судьба": "khan",
+    "дуэль": "chall",
+    "вера": "tribunal",
+    "песня": "chant",
+    "ураган": "sul"
+  }
+}
