@@ -1,11 +1,19 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
+from PyInstaller.utils.hooks import collect_data_files
+
+pymorphy_data = collect_data_files('pymorphy2_dicts_ru')
+
 a = Analysis(
     ['app.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[
+        ('templates', 'templates'),
+        ('static', 'static'),
+        ('languages', 'languages'),
+    ] + pymorphy_data,
     hiddenimports=['flask_babel'],
     hookspath=[],
     hooksconfig={},
