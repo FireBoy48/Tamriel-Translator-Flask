@@ -1,12 +1,39 @@
 from flask import Flask, render_template, request
 import os
 import json
+import sys
 import pymorphy2
+import inspect
+from collections import namedtuple
 
-app = Flask(__name__)
+# `pymorphy2` relies on the deprecated ``inspect.getargspec`` which was removed
+# in Python 3.11. Provide a compatible implementation that mimics the old
+# behaviour using ``inspect.getfullargspec``.
+if not hasattr(inspect, "getargspec"):
+    ArgSpec = namedtuple("ArgSpec", "args varargs keywords defaults")
+
+    def getargspec(func):
+        spec = inspect.getfullargspec(func)
+        return ArgSpec(spec.args, spec.varargs, spec.varkw, spec.defaults)
+
+    inspect.getargspec = getargspec
+
+BASE_DIR = getattr(sys, "_MEIPASS", os.path.abspath(os.path.dirname(__file__)))
+
+# Ensure pymorphy2 uses dictionaries bundled with the executable
+if getattr(sys, "_MEIPASS", False):
+    os.environ.setdefault(
+        "PYMORPHY2_DICT_PATH", os.path.join(BASE_DIR, "pymorphy2_dicts_ru", "data")
+    )
+
+app = Flask(
+    __name__,
+    template_folder=os.path.join(BASE_DIR, "templates"),
+    static_folder=os.path.join(BASE_DIR, "static"),
+)
 morph = pymorphy2.MorphAnalyzer()
 
-LANGUAGE_FOLDER = 'languages'
+LANGUAGE_FOLDER = os.path.join(BASE_DIR, "languages")
 
 def load_languages():
     languages = {}
