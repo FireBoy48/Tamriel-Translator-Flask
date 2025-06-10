@@ -1,0 +1,27 @@
+{
+  "source_language": "ru",
+  "target_language": "aldmeris",
+  "dictionary": {
+    "бог": "ada",
+    "богиня": "adawen",
+    "храм": "adas",
+    "метеор": "abramor",
+    "комета": "abramor",
+    "растение": "acia",
+    "слушать": "adma",
+    "плохослышащий": "adma'na",
+    "изумление": "aellis",
+    "петь": "aetta",
+    "песня": "aettus",
+    "мёд": "afba",
+    "знание": "agar",
+    "мудрость": "agea",
+    "дракон": "aka",
+    "король": "aran",
+    "правитель": "arana",
+    "туман": "arata",
+    "утроба": "arbas",
+    "замок": "archen",
+    "верность": "ardis"
+  }
+}
