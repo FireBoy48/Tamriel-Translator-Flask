@@ -1,6 +1,6 @@
 {
-  "source_language": "ru",
-  "target_language": "aldmeris",
+  "source_language": "aldmeris",
+  "target_language": "ru",
   "dictionary": {
     "запрещённый": "aba",
     "несуществующий": "abannen",
